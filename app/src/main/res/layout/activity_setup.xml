@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright 2018 Dmytro Ponomarenko
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+	<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1">
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:animateLayoutChanges="true"
+				android:paddingBottom="@dimen/spacing_normal"
+				android:orientation="vertical">
+
+			<LinearLayout
+					android:id="@+id/toolbar"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/toolbar_height"
+					android:layout_marginBottom="@dimen/spacing_small"
+					android:orientation="horizontal">
+
+				<TextView
+						style="@style/Text.SectionLabel"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/spacing_xxdouble"
+						android:layout_gravity="center_vertical"
+						android:text="@string/setup"
+						/>
+
+			</LinearLayout>
+
+			<Spinner
+					android:id="@+id/themeColor"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:visibility="visible"
+					android:paddingStart="0dp"
+					android:paddingEnd="1dp"/>
+
+			<Spinner
+					android:id="@+id/name_format"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/spacing_small"
+					android:visibility="visible"
+					android:paddingStart="0dp"
+					android:paddingEnd="1dp"/>
+
+			<com.dimowner.quranicmistakeshelper.app.widget.SettingView
+					android:id="@+id/setting_recording_format"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			<com.dimowner.quranicmistakeshelper.app.widget.SettingView
+					android:id="@+id/setting_frequency"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			<com.dimowner.quranicmistakeshelper.app.widget.SettingView
+					android:id="@+id/setting_bitrate"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			<com.dimowner.quranicmistakeshelper.app.widget.SettingView
+					android:id="@+id/setting_channels"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:visibility="gone"
+					android:orientation="horizontal">
+
+				<TextView
+						style="@style/Text.NormalLabel"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="@string/record_in_stereo"
+						android:layout_marginTop="@dimen/spacing_normal"
+						android:layout_marginBottom="@dimen/spacing_normal"
+						android:layout_marginEnd="@dimen/spacing_normal"
+						android:layout_marginStart="@dimen/spacing_normal"
+						android:drawableStart="@drawable/ic_surround_sound_2_0"
+						android:drawablePadding="@dimen/spacing_double"
+						/>
+
+				<Switch
+						android:id="@+id/swRecordInStereo"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="@dimen/spacing_normal"
+						android:layout_gravity="top"
+						/>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|center_horizontal"
+			android:paddingStart="@dimen/spacing_small"
+			android:paddingEnd="@dimen/spacing_small"
+			android:background="@color/white_transparent_80"
+			android:orientation="vertical">
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:src="@drawable/ic_info" />
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+					<TextView
+							android:id="@+id/txt_size_per_min"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/spacing_small"
+							android:layout_marginStart="@dimen/spacing_small"
+							android:layout_marginEnd="@dimen/spacing_xsmall"
+							android:layout_gravity="center_vertical"
+							android:fontFamily="sans-serif-light"
+							android:textColor="@color/white"
+							android:textSize="@dimen/text_medium"
+							tools:text="5 Mb/min" />
+					<TextView
+							android:id="@+id/txt_information"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							tools:text="WAV is uncompressed format and it takes a lot of space"
+							android:layout_marginTop="@dimen/spacing_tiny"
+							android:layout_marginBottom="@dimen/spacing_tiny"
+							android:layout_marginStart="@dimen/spacing_small"
+							android:layout_marginEnd="@dimen/spacing_small"
+							android:fontFamily="sans-serif-light"
+							android:textColor="@color/white"
+							android:textSize="@dimen/text_normal" />
+				</LinearLayout>
+			</LinearLayout>
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+			<Button
+					android:id="@+id/btn_reset"
+					style="@style/Widget.RaisedButton"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginTop="@dimen/spacing_small"
+					android:layout_marginBottom="@dimen/spacing_small"
+					android:layout_marginEnd="@dimen/spacing_xtiny"
+					android:text="@string/btn_reset"
+					android:textSize="@dimen/text_medium" />
+			<Button
+					android:id="@+id/btn_apply"
+					style="@style/Widget.RaisedButton"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginTop="@dimen/spacing_small"
+					android:layout_marginBottom="@dimen/spacing_small"
+					android:layout_marginStart="@dimen/spacing_xtiny"
+					android:text="@string/btn_apply"
+					android:textSize="@dimen/text_medium" />
+		</LinearLayout>
+<!--		<Space-->
+<!--				android:id="@+id/space"-->
+<!--				android:layout_width="match_parent"-->
+<!--				android:layout_height="@dimen/spacing_normal" />-->
+	</LinearLayout>
+</LinearLayout>

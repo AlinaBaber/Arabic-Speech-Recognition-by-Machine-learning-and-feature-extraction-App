@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dimowner.quranicmistakeshelper">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="true" />
+
+    <application
+        android:name="com.dimowner.quranicmistakeshelper.ARApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="@bool/useHardwareAcceleration"
+        android:icon="@mipmap/quran"
+        android:label="Quran Application"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/quran"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.RecognizeTextActivity"
+            android:label="@string/title_activity_recognize_text"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.ListAyatKousarActivity"
+            android:label="@string/title_activity_list_ayat_kousar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.ListAyatIkhlasActivity"
+            android:label="ListAyatIklasActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.ListAyatNaasActivity"
+            android:label="ListAyatNaasActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.ListAyatFalakActivity"
+            android:label="ListAyatFalakActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.ListofMistakesActivity"
+            android:label="ListofMistakeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.KausarAyatActivity"
+            android:label="@string/title_activity_kausar_ayat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.HomePageActivity"
+            android:label="HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.LoginSignupPageActivity"
+            android:label="LoginSignupActivity"
+            android:windowSoftInputMode="stateVisible"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.SignupPageActivity"
+            android:label="SignupActivity"
+            android:windowSoftInputMode="stateVisible"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.AboutActivity"
+            android:label="AboutAcitivty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.FAQActivity"
+            android:label="FAQAcitivty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.records.RecordsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.settings.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.info.ActivityInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.lostrecords.LostRecordsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.browser.FileBrowserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.trash.TrashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.welcome.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <activity
+            android:name="com.dimowner.quranicmistakeshelper.app.setup.SetupActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.dimowner.quranicmistakeshelper.app.RecordingService" />
+        <service android:name="com.dimowner.quranicmistakeshelper.app.PlaybackService" />
+        <service android:name="com.dimowner.quranicmistakeshelper.app.DownloadService" />
+        <service android:name="com.dimowner.quranicmistakeshelper.app.DecodeService" />
+
+        <receiver android:name="com.dimowner.quranicmistakeshelper.app.RecordingService$StopRecordingReceiver" />
+        <receiver android:name="com.dimowner.quranicmistakeshelper.app.PlaybackService$StopPlaybackReceiver" />
+        <receiver android:name="com.dimowner.quranicmistakeshelper.app.DownloadService$StopDownloadReceiver" />
+        <receiver android:name="com.dimowner.quranicmistakeshelper.app.DecodeService$StopDecodeReceiver" />
+
+        <provider
+            android:name="com.dimowner.quranicmistakeshelper.AppFileProvider"
+            android:authorities="${applicationId}.app_file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

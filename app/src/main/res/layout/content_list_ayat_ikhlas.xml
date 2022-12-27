@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ikhlaas"
+        android:textAlignment="center"
+
+        android:textSize="30dp" />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bismillah"
+
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bottom_pnl_small_btn_size"
+
+            android:text="@string/ikhlaas1"
+            android:textAlignment="center"
+            android:textColor="@color/md_amber_800"
+            android:textSize="30dp" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+            <ImageButton
+                android:id="@+id/btnikhlas1"
+                style="@android:style/Widget.Material.ImageButton"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="firstAyatPlayiklas"
+                android:src="@drawable/ic_play" />
+
+            <ImageButton
+                android:layout_width="42dp"
+                android:layout_height="30dp"
+                android:onClick="onRecording"
+                android:src="@drawable/ic_recording_yellow" />
+
+        </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ikhlaas2"
+
+            android:textAlignment="center"
+            android:textColor="@color/md_amber_800"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnikhlas2"
+                style="@android:style/Widget.Material.ImageButton"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="secondAyatPlayikhlas"
+                android:src="@drawable/ic_play" />
+
+            <ImageButton
+                android:layout_width="42dp"
+                android:layout_height="30dp"
+                android:onClick="onRecording"
+                android:src="@drawable/ic_recording_yellow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ikhlaas3"
+
+            android:textAlignment="center"
+            android:textColor="@color/md_amber_800"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnikhlas3"
+                android:layout_width="43dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="thirdAyatPlayikhlas"
+                android:src="@drawable/ic_play" />
+
+            <ImageButton
+                android:layout_width="42dp"
+                android:layout_height="30dp"
+                android:onClick="onRecording"
+                android:src="@drawable/ic_recording_yellow" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ikhlaas4"
+
+            android:textAlignment="center"
+            android:textColor="@color/md_amber_800"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnikhlas4"
+                style="@android:style/Widget.Material.ImageButton"
+                android:layout_width="36dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="fourhtAyatPlayiklas"
+                android:src="@drawable/ic_play" />
+
+            <ImageButton
+                android:layout_width="39dp"
+                android:layout_height="30dp"
+                android:onClick="onRecording"
+                android:src="@drawable/ic_recording_yellow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

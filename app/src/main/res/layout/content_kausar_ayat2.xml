@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Surah"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/design_default_color_surface"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/btnkausar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:text="سورَةُ الكَوثَر" />
+
+    <Button
+        android:id="@+id/btnfalaq"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:text="سورَةُ اَلْفَلَق‎" />
+
+    <Button
+        android:id="@+id/btnikhlas"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:text="سورَةُ  الْإِخْلَاص‎" />
+
+    <Button
+        android:id="@+id/btnnaas"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="سورَةُ  الناس‎‎" />
+
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Select Surah"
+      android:textAlignment="center"
+      android:textAllCaps="false"
+      android:textColor="@color/design_default_color_surface"
+      android:textSize="34sp" />
+
+  <Button
+      android:id="@+id/btnkausar1"
+      style="@style/Widget.RaisedButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="onClickAyat"
+      android:text="سورَةُ الكَوثَر" />
+
+  <Button
+      android:id="@+id/btnfalak3"
+      style="@style/Widget.RaisedButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="onClickAyat"
+      android:text="سورَةُ اَلْفَلَق‎" />
+
+  <Button
+      android:id="@+id/btnikhlas3"
+      style="@style/Widget.RaisedButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="onClickAyat"
+      android:text="سورَةُ  الْإِخْلَاص‎" />
+
+  <Button
+      android:id="@+id/btnnaas3"
+      style="@style/Widget.RaisedButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="onClickAyat"
+      android:text="سورَةُ  الناس‎‎" />
+</LinearLayout>

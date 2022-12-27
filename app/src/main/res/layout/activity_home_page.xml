@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnfaq"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="412dp"
+        android:layout_height="55dp"
+        android:text="@string/stringhelp"
+        app:layout_constraintBottom_toTopOf="@+id/btnexit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnabout" />
+
+    <Button
+        android:id="@+id/btnexit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="412dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="137dp"
+        android:text="@string/logoutbtnstring"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfaq" />
+
+    <Button
+        android:id="@+id/btnabout"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="412dp"
+        android:layout_height="55dp"
+        android:text="@string/stringbtnabout"
+        app:layout_constraintBottom_toTopOf="@+id/btnfaq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsettings" />
+
+    <Button
+        android:id="@+id/btnsettings"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="412dp"
+        android:layout_height="55dp"
+        android:text="@string/stringbtnsettings"
+        app:layout_constraintBottom_toTopOf="@+id/btnabout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlistenmistakes" />
+
+    <Button
+        android:id="@+id/btnlistenmistakes"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="412dp"
+        android:layout_height="55dp"
+        android:onClick="onRecording"
+        android:text="@string/viewlistoflistmistakes"
+        app:layout_constraintBottom_toTopOf="@+id/btnsettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnstartrecitation" />
+
+    <Button
+        android:id="@+id/btnstartrecitation"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="412dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="58dp"
+        android:text="@string/stringbtnstartreciting"
+        app:layout_constraintBottom_toTopOf="@+id/btnlistenmistakes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeusertxt" />
+
+    <TextView
+        android:id="@+id/welcomeusertxt"
+        android:layout_width="367dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="Welcome To Quran Recitation Mistakes Helper"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toTopOf="@+id/btnstartrecitation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

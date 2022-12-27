@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keyboardNavigationCluster="true"
+    tools:context=".app.main.FAQActivity">
+
+    <Button
+        android:id="@+id/signupbtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="380dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/signup"
+        app:layout_constraintBottom_toTopOf="@+id/signupexitbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/signclearbtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="380dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toTopOf="@+id/signupexitbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupbtn" />
+
+    <Button
+        android:id="@+id/signupexitbtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="380dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="39dp"
+        android:text="@string/stringbtnexit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signclearbtn"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/signuppasswordtxt"
+        android:layout_width="286dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/enterpassword"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/signupbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signuppasswordlbl" />
+
+    <EditText
+        android:id="@+id/signusernametxt"
+        android:layout_width="292dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="14dp"
+        android:allowUndo="false"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/enterloginname"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/signupemaillbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginuserlbl" />
+
+    <EditText
+        android:id="@+id/signupemailtxt"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/enteremail"
+
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/signuppasswordlbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupemaillbl" />
+
+    <TextView
+        android:id="@+id/createaccounttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/createaccount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/loginuserlbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loginuserlbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/username"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/signusernametxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createaccounttitle" />
+
+    <TextView
+        android:id="@+id/signuppasswordlbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/password2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/signuppasswordtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupemailtxt" />
+
+    <TextView
+        android:id="@+id/signupemaillbl"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/emailidno"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/signupemailtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signusernametxt" />
+
+</RelativeLayout>

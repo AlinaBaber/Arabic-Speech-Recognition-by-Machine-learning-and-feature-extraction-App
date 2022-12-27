@@ -1,0 +1,334 @@
+<resources>
+    <string name="app_name">Audio Recorder</string>
+
+    <string name="records">Records</string>
+    <string name="settings">Settings</string>
+    <string name="setup">Setup</string>
+    <string name="welcome_1">Welcome to the simple and fast application</string>
+    <string name="welcome_2">Beautiful design and good functionality</string>
+    <string name="welcome_3">Select best settings and start recording</string>
+    <string name="title_1">Audio Recorder</string>
+    <string name="title_2">Audio Recorder</string>
+    <string name="title_3">Recordio Audier</string>
+    <string name="rate_app">Rate app</string>
+    <string name="store_records_public">Store records in a public dir</string>
+    <string name="record_in_stereo">Record in Stereo</string>
+    <string name="keep_screen_on">Keep screen ON while recording</string>
+    <string name="total_duration">Total recorded duration: %s</string>
+    <string name="total_record_count">Total records count: %d</string>
+    <string name="available_space">Available space: %s</string>
+    <string name="delete_all">Delete all records</string>
+    <string name="delete_all2">Delete all</string>
+    <string name="records_was_removed">Some records files was not found in the records directory. Possibly they was removed or moved.</string>
+    <string name="warning">Warning!</string>
+    <string name="delete_this_record">Delete this record?</string>
+    <string name="delete_record">Move to trash %s?</string>
+    <string name="delete_record_forever">Delete record %s forever?</string>
+    <plurals name="delete_selected_records">
+        <item quantity="one">Move to trash %d selected record?</item>
+        <item quantity="other">Move to trash %d selected records?</item>
+    </plurals>
+    <plurals name="download_selected_records">
+        <item quantity="one">Copy %d selected record to the Download folder?</item>
+        <item quantity="other">Copy %d selected records to the Download folder?</item>
+    </plurals>
+    <string name="restore_record">Restore record %s?</string>
+    <string name="delete_all_records">Delete all records?</string>
+    <string name="all_records_deleted">All records deleted successfully</string>
+    <string name="failed_to_delete_all_records">Failed to delete all records</string>
+    <string name="please_select_record_to_share">Please select a record to share</string>
+    <string name="record_name">New name</string>
+    <string name="recording">Recording: %s</string>
+    <string name="recording_is_on">Recording is ON</string>
+    <string name="recording_progress">Recording&#8230;</string>
+    <string name="recording_paused">Paused</string>
+    <string name="playback">Playback: %s</string>
+    <string name="zero_time">00:00</string>
+    <string name="empty">Empty</string>
+    <string name="selected"> %d selected</string>
+    <string name="no_records">Records is empty</string>
+    <string name="no_bookmarks">Bookmarks is empty</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="share_record">Share record: %s</string>
+    <plurals name="share_records_count">
+        <item quantity="one">Share %d record</item>
+        <item quantity="other">Share %d records</item>
+    </plurals>
+    <string name="import_progress">Audio file import&#8230;</string>
+    <string name="btn_import">Import</string>
+    <string name="processing_canceled">Processing is canceled</string>
+    <string name="record_calculation">Waveform calculations&#8230;</string>
+    <string name="record_processing">Waveform drawing calculations&#8230;</string>
+    <string name="request">Request or feedback</string>
+    <string name="email_clients_not_found">Not found any Email client</string>
+    <string name="send_email">Send by email&#8230;</string>
+    <string name="open_record_with">Open %s with</string>
+    <string name="delete">Delete</string>
+    <string name="restore">Restore</string>
+    <string name="info">Information</string>
+    <string name="rename">Rename</string>
+    <string name="dont_ask_again">Don\'t ask again</string>
+    <string name="open_with">Open with&#823;</string>
+    <string name="download">Download</string>
+    <string name="downloading">Downloading: %s</string>
+    <plurals name="downloading_success_count">
+        <item quantity="one">%d record downloaded successfully</item>
+        <item quantity="other">%d records downloaded successfully</item>
+    </plurals>
+    <string name="downloading_success_and_fail_count">%d records downloaded successfully and %d failed to download</string>
+    <string name="downloading_success">%s downloaded to the Download directory</string>
+    <plurals name="downloading_failed_count">
+        <item quantity="one">Failed to download %d record</item>
+        <item quantity="other">Failed to download %d records</item>
+    </plurals>
+    <string name="downloading_failed">Failed to download: %s</string>
+    <string name="downloading_failed_file_already_exists">Failed to download. File with name %s already exists</string>
+    <string name="downloading_cancel">Downloading canceled</string>
+    <string name="share">Share</string>
+    <string name="ask_to_rename">Show rename dialog after recording is completed</string>
+    <string name="record_moved_into_trash">The record moved to trash</string>
+    <string name="selected_records_moved_into_trash">Selected records moved to trash</string>
+    <string name="all_records_deleted_successfully">All records deleted successfully</string>
+    <string name="record_deleted_successfully">The record deleted successfully</string>
+    <string name="record_restored_successfully">The record restored successfully</string>
+    <string name="record_imported_successfully">The record imported successfully</string>
+    <string name="cant_import_files">Can\'t import files</string>
+    <string name="by_date">By date (newest)</string>
+    <string name="by_date_desc">By date (oldest)</string>
+    <string name="by_name">By name (A-Z)</string>
+    <string name="by_name_desc">By name (Z-A)</string>
+    <string name="by_duration">By duration (longest)</string>
+    <string name="by_duration_desc">By duration (shortest)</string>
+    <string name="need_write_permission">The app requires permission to access to the public storage. If not allowed, records will be stored in the app’s private directory</string>
+    <string name="rec_name">Name:</string>
+    <string name="rec_format">Format:</string>
+    <string name="rec_duration">Duration:</string>
+    <string name="rec_frequency">Frequency:</string>
+    <string name="rec_size">Size:</string>
+    <string name="rec_created">Created:</string>
+    <string name="rec_location">File location:</string>
+    <string name="naming">Naming:</string>
+    <string name="private_dir_warning">Records will be stored in the app\'s private directory which is not visible for other apps</string>
+    <string name="public_dir_warning">Records will be stored in a common directory on your device which is visible for other apps</string>
+    <string name="lost_records">Lost records</string>
+    <string name="trash">Trash</string>
+    <string name="trash_info">The records moved to the trash will be automatically removed forever in 60 days.</string>
+    <string name="file_browser">File browser</string>
+    <string name="private_dir">Private directory</string>
+    <string name="public_dir">Public directory</string>
+    <string name="found_in_the_app">Found in the app</string>
+    <string name="not_found_in_the_app">Not found in the app</string>
+    <string name="in_trash">In the trash</string>
+
+    <string name="app_settings">App settings:</string>
+    <string name="recording_settings">Recording settings:</string>
+    <string name="other_settings">Other:</string>
+
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_ok">Ok</string>
+    <string name="btn_no">No</string>
+    <string name="btn_play">Play</string>
+    <string name="btn_deny">Deny</string>
+    <string name="btn_allow">Allow</string>
+    <string name="btn_details">Details</string>
+    <string name="btn_get_started">Get started</string>
+    <string name="btn_apply">Apply</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_next">Next</string>
+    <string name="info_format"><b>M4a</b> format is encoded with AAC audio codec has good quality and small size. <b>(recommended)</b>
+		\n<b>Wav</b> is uncompressed audio data format. It takes much more space than other formats. It\'s needed for specific cases.
+		\n<b>3gp</b> is a multimedia container format developed for mobile telecommunication services. Use it if you need to save space.
+		</string>
+    <string name="info_frequency"><b>Sample rate</b> is the number of samples of audio carried per second.
+		\n<b>48kHz</b> is the sample rate used for DVDs.
+		\n<b>44,1kHz</b> is the sampling rate of Audio CDs. <b>(recommended)</b>
+		\n<b>22kHz</b> popular sample rate for low bit rate such as 64 kbps.
+		\n <b>8kHz</b> sample rate has less bandwidth than modern telephone systems. Not suitable for any serious recording task.
+		</string>
+    <string name="info_bitrate"><b>Bitrate</b> is size of data per second of sound. Directly affects recording quality and size.
+		\n<b>256 kbps</b> good quality bitrate.
+		\n<b>192 kbps</b> medium quality bitrate.
+		\n<b>128 kbps</b> mid-range bitrate quality. Common bitrate for podcasts. <b>(recommended)</b>
+		\n<b>96 kbps</b> generally used for speech or low-quality streaming.
+		\n<b>48 kbps</b> generally acceptable only for speech.
+		</string>
+    <string name="info_channels">
+		<b>Stereo</b> two separate channels are recorded. This means that each stereo speaker has a different sound signal. <b>(recommended)</b>
+		\n<b>Mono</b> one signal channel is recorded. It can be reproduced through several speakers, but all speakers are still reproducing the same copy of the signal.
+		</string>
+    <string name="info_3gp"><b>3gp</b> is a multimedia container format developed for mobile telecommunication services. Use it if you need to save space.</string>
+    <string name="info_m4a"><b>M4a</b> format is encoded with AAC audio codec has good quality and small size. <b>(recommended)</b></string>
+    <string name="info_wav"><b>Wav</b> is uncompressed audio data format. It takes much more space than other formats. It\'s needed for specific cases.</string>
+    <string name="info_stereo"><b>Stereo</b> two separate channels are recorded. This means that each stereo speaker has a different sound signal. <b>(recommended)</b></string>
+    <string name="info_mono"><b>Mono</b> one signal channel is recorded. It can be reproduced through several speakers, but all speakers are still reproducing the same copy of the signal.</string>
+    <string name="info_bitrate_48"><b>48 kbps</b> generally acceptable only for speech.</string>
+    <string name="info_bitrate_96"><b>96 kbps</b> generally used for speech or low-quality streaming.</string>
+    <string name="info_bitrate_128"><b>128 kbps</b> mid-range bitrate quality. Common bitrate for podcasts. <b>(recommended)</b></string>
+    <string name="info_bitrate_192"><b>192 kbps</b> medium quality bitrate.</string>
+    <string name="info_bitrate_256"><b>256 kbps</b> good quality bitrate.</string>
+    <string name="info_sample_rate_8k"><b>8kHz</b> sample rate has less bandwidth than modern telephone systems. Not suitable for any serious recording task.</string>
+    <string name="info_sample_rate_16k"><b>16kHz</b> is better than 8kHz.</string>
+    <string name="info_sample_rate_22k"><b>22kHz</b> popular sample rate for low bit rate such as 64 kbps.</string>
+    <string name="info_sample_rate_32k"><b>32kHz</b> is a bit better than 22kHz.</string>
+    <string name="info_sample_rate_44k"><b>44,1kHz</b> is the sampling rate of Audio CDs. <b>(recommended)</b></string>
+    <string name="info_sample_rate_48k"><b>48kHz</b> is the sample rate used for DVDs.</string>
+    <string name="recording_format">Recording format:</string>
+    <string name="bitrate">Bitrate:</string>
+    <string name="channels">Channel count:</string>
+    <string name="sample_rate">Sample rate:</string>
+    <string name="size_per_min">%s Mb/min expected size</string>
+    <string name="value_hz">%d Hz</string>
+    <string name="value_kbps">%d kbps</string>
+    <string name="stereo">Stereo</string>
+    <string name="mono">Mono</string>
+    <string name="records_location">Records location:\n%s</string>
+    <string name="feature_not_available_in_android_10">This feature is no longer available in Android 10 or higher.</string>
+    <string name="size">%s Mb</string>
+
+    <string name="error_unknown">Unexpected error</string>
+    <string name="error_cant_create_file">Can\'t create file</string>
+    <string name="error_invalid_output_file">Invalid output file</string>
+    <string name="error_file_exists">File with this name is already exists!</string>
+    <string name="error_failed_to_rename">Failed to rename the record!</string>
+    <string name="error_failed_to_init_recorder">Failed to init the Recorder</string>
+    <string name="error_failed_to_init_player">Failed to init the Player</string>
+    <string name="error_player_data_source">Player can\'t read the file</string>
+    <string name="error_unable_to_read_sound_file">Unable to read sound file</string>
+    <string name="error_permission_denied">Permission denied</string>
+    <string name="error_process_waveform">Can\'t draw waveform</string>
+    <string name="error_lost_records">Some of your records was deleted or moved</string>
+    <string name="error_no_available_space">No available space!</string>
+    <string name="error_failed_access_to_storage">Failed access to file storage</string>
+    <string name="error_on_recording">Recording error!</string>
+    <string name="error_failed_to_restore">Failed to restore the record!</string>
+    <string name="error_failed_to_delete">Failed to delete the record!</string>
+
+    <!-- Shown in the 'About' window of the app. -->
+    <string name="about_body"><![CDATA[
+    	<b>Audio Recorder 2021</b><br>
+		Version %s
+	]]></string>
+    <!--<a href="http://#/">Application site</a>-->
+
+    <string-array name="theme_colors2">
+        <item>Theme Blue Gray</item>
+        <item>Theme Black</item>
+        <item>Theme Teal</item>
+        <item>Theme Blue</item>
+        <item>Theme Purple</item>
+        <item>Theme Pink</item>
+        <item>Theme Orange</item>
+        <item>Theme Red</item>
+        <item>Theme Brown</item>
+    </string-array>
+
+    <string-array name="formats2">
+        <item>M4a</item>
+        <item>Wav</item>
+        <item>3gp</item>
+    </string-array>
+
+    <string-array name="bit_rates2">
+        <!--		<item>24 kbps</item>-->
+        <item>48 kbps</item>
+        <item>96 kbps</item>
+        <item>128 kbps</item>
+        <item>192 kbps</item>
+        <item>256 kbps</item>
+    </string-array>
+
+    <string-array name="sample_rates2">
+        <item>8kHz</item>
+        <item>16kHz</item>
+        <item>22kHz</item>
+        <item>32kHz</item>
+        <item>44.1kHz</item>
+        <item>48kHz</item>
+    </string-array>
+
+    <string-array name="channels">
+        <item>Stereo</item>
+        <item>Mono</item>
+    </string-array>
+    <string name="title_activity_kausar_ayat">KausarAyatActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_list_ayat_kousar">ListAyatKousarActivity</string>
+    <string name="title_activity_recognize_text">RecognizeTextActivity</string>
+    <string name="stringbtnstartreciting">Start Recitation</string>
+    <string name="stringbtnlistenmistakes">Listen Mistakes</string>
+    <string name="stringbuttonreadquran">Read Quran</string>
+    <string name="stringbtnsettings">Settings</string>
+    <string name="stringbtnabout">About</string>
+    <string name="stringbtnexit">Exit</string>
+    <string name="stringviewmistake">View mistakes</string>
+    <string name="stringhelp">Help</string>
+    <string name="Faq">FAQ</string>
+    <string name="appname">Quran Recitation Helper</string>
+    <string name="ikhlaas1">"قُلۡ هُوَ ٱللَّهُ أَحَدٌ ١ "</string>
+    <string name="ikhlaas2">"ٱللَّهُ ٱلصَّمَدُ ٢ "</string>
+    <string name="ikhlaas3">"لَمۡ\tيَلِدۡ\tوَلَمۡ\tيُولَدۡ ٣ "</string>
+    <string name="ikhlaas4">وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ ٤</string>
+    <string name="ikhlaas">سُورَةُ الإِخۡلَاصِ</string>
+    <string name="bismillah">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</string>
+    <string name="falaq">سُورَةُ الفَلَقِ</string>
+    <string name="falaq1">"قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ ١ "</string>
+    <string name="falaq2">"مِن شَرِّ مَا خَلَقَ ٢ "</string>
+    <string name="falaqahaa">مِن شَرِّ مَا خَلَقَ ٢</string>
+    <string name="falaq4">"وَمِن\tشَرِّٱلنَّفَّٰثَٰتِ\tفِي\tلۡعُقَدِ ٤ "</string>
+    <string name="falaq5">وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ٥</string>
+    <string name="falaq3">"وَمِن\tشَرِّغَاسِقٍ إِذَا وَقَبَ ٣ "</string>
+    <string name="kausar">سُورَةُ الكَوۡثَرِ</string>
+    <string name="kausar1">"إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ ١ "</string>
+    <string name="kausar2">فَصَلِّ\tلِرَبِّكَ\tوَٱنۡحَرۡ ٢</string>
+    <string name="kausar3">إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ ٣</string>
+    <string name="naas">سُورَةُ النَّاسِ</string>
+    <string name="naas1">"قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ ١ "</string>
+    <string name="naas2">"مَلِكِ\tٱلنَّاسِ ٢ "</string>
+    <string name="naas3">إِلَٰهِ\tٱلنَّاسِ ٣</string>
+    <string name="naas4">" مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ ٤"</string>
+    <string name="naas4242">" مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ ٤"</string>
+    <string name="naas5">" ٱلَّذِي\tيُوَسۡوِسُ فِي\tصُدُورِٱلنَّاسِ ٥ "</string>
+    <string name="naas6">مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ ٦</string>
+    <string name="aboutdetails">"The art of Tajweed and linguistic properties of Arabic has always been an interesting field for research. This project represents the problem of Quran recitation verification for Quran readers around the world. In this project real time Quran speech recognition will be used to solve this problem. A mobile application that will recognized users recitation while reciting the Holy Quran and will match it with the stored Surah and As a reciter, user want an instant recognition of the mistakes, so that the system will alert when a reciter makes a mistake by beep alert and showing the option to listen the correct recitation instantly and can save the mistake for future The user must select Surah he or she is going to recite before starting the recitation from Surah Nasr to Surah Naas. Then, he/she will start recitation of the selected Surah. The system will detect mistakes and alerts user for mistakes if there are any, the user can listen to the correct recitation, can save and listen to the mistakes. "</string>
+    <string name="contactdetails">"  For more details contact: Email: shahrukhghazi456@gmail.com"</string>
+    <string name="aboutus1">The art of Tajweed and linguistic properties of Arabic has always been an interesting field for research.</string>
+    <string name="aboutus2">This project represents the problem of Quran recitation verification for Quran readers around the world.</string>
+    <string name="aboutus3">In this project real time Quran speech recognition will be used to solve this problem.</string>
+    <string name="aboutus4">"A mobile application that will recognized users recitation while reciting the Holy Quran and will match it with the stored Surah "</string>
+    <string name="aboutus5">As a reciter, user want an instant recognition of the mistakes, so that the system will alert.</string>
+    <string name="about6">when a reciter makes a mistake by beep alert and showing the option to listen the correct recitation instantly and can save the mistake for future.</string>
+    <string name="aboutus7">"The user must select Surah he or she is going to recite before starting the recitation from Surah Nasr to Surah Naas. "</string>
+    <string name="aboutus8">Then, he/she will start recitation of the selected Surah.</string>
+    <string name="aboutus9">The system will detect mistakes and alerts user for mistakes if there are any, the user can listen to the correct recitation, can save and listen to the mistakes.The system will detect mistakes and alerts user for mistakes if there are any, the user can listen to the correct recitation, can save and listen to the mistakes.</string>
+    <string name="welcometext">Welcome to Quaranic Mistakes Helper</string>
+    <string name="newappname">Quranic Mistake Helper</string>
+    <string name="authen">User Authentication</string>
+    <string name="loginsignup">User Login</string>
+    <string name="signup">Signup</string>
+    <string name="username">User Name :</string>
+    <string name="password2">Password :</string>
+    <string name="emailidno">Email Address :</string>
+    <string name="enterloginname">Enter User Name</string>
+    <string name="enteremail">Enter Email Address</string>
+    <string name="clear">Clear</string>
+    <string name="enterpassword">Enter Password</string>
+    <string name="email">Email ID</string>
+    <string name="login">Login</string>
+    <string name="createaccount">Create new Account</string>
+    <string name="logout">Logout</string>
+    <string name="logoutbtnstring">Log Out</string>
+    <string name="listofmistakes">List of Mistakes by user</string>
+    <string name="viewlistoflistmistakes">View List of Mistakes</string>
+</resources>

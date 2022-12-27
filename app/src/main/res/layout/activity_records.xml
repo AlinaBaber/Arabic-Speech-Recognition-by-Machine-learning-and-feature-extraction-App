@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright 2018 Dmytro Ponomarenko
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				 android:layout_width="match_parent"
+				 android:layout_height="match_parent"
+				 xmlns:tools="http://schemas.android.com/tools">
+
+	<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recycler_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:overScrollMode="never"
+			/>
+
+	<LinearLayout
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+		<ImageButton
+				android:id="@+id/btn_back"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@null"
+				android:layout_gravity="start"
+				android:background="?android:selectableItemBackgroundBorderless"
+				android:padding="@dimen/spacing_normal"
+				android:src="@drawable/ic_arrow_back"/>
+
+		<LinearLayout
+				android:id="@+id/title"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				android:orientation="vertical">
+
+			<TextView
+					style="@style/Text.SectionLabel"
+					android:id="@+id/txt_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:paddingStart="@dimen/spacing_normal"
+					android:paddingLeft="@dimen/spacing_normal"
+					android:paddingEnd="@dimen/spacing_normal"
+					android:paddingRight="@dimen/spacing_normal"
+					android:textColor="@color/text_primary_light"
+					android:text="@string/records"
+					/>
+			<TextView
+					style="@style/Text"
+					android:id="@+id/txt_sub_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/text_normal"
+					android:maxLines="1"
+					android:ellipsize="end"
+					android:gravity="center_vertical"
+					android:layout_marginStart="@dimen/spacing_normal"
+					android:layout_marginBottom="@dimen/spacing_small"
+					android:textColor="@color/text_primary_light"
+					tools:text="@string/records"
+					/>
+		</LinearLayout>
+
+		<ImageButton
+				android:id="@+id/btn_sort"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@null"
+				android:layout_gravity="center_vertical|end"
+				android:background="?android:selectableItemBackgroundBorderless"
+				android:padding="@dimen/spacing_normal"
+				android:src="@drawable/ic_sort"/>
+
+		<ImageButton
+				android:id="@+id/btn_bookmarks"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@null"
+				android:layout_gravity="center_vertical|end"
+				android:background="?android:selectableItemBackgroundBorderless"
+				android:padding="@dimen/spacing_normal"
+				android:src="@drawable/ic_bookmark_bordered"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+			android:id="@+id/menu_multi_select"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/md_blue_gray_500"
+			android:visibility="gone"
+			android:orientation="horizontal"
+			android:elevation="@dimen/toolbar_elevation"
+			tools:visibility="visible">
+
+		<ImageButton
+				android:id="@+id/btn_close_multi_select"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@null"
+				android:layout_gravity="start"
+				android:background="?android:selectableItemBackgroundBorderless"
+				android:padding="@dimen/spacing_normal"
+				android:src="@drawable/ic_round_close"/>
+
+		<TextView
+				style="@style/Text.SectionLabel"
+				android:id="@+id/txt_selected_multi"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_gravity="center_vertical"
+				android:paddingStart="@dimen/spacing_normal"
+				android:paddingLeft="@dimen/spacing_normal"
+				android:paddingEnd="@dimen/spacing_normal"
+				android:paddingRight="@dimen/spacing_normal"
+				android:textColor="@color/text_primary_light"
+				android:text="@string/selected"
+				/>
+
+		<ImageButton
+				android:id="@+id/btn_share_multi"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@null"
+				android:layout_gravity="center_vertical|end"
+				android:background="?android:selectableItemBackgroundBorderless"
+				android:padding="@dimen/spacing_normal"
+				android:src="@drawable/ic_share"/>
+
+		<ImageButton
+				android:id="@+id/btn_download_multi"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@null"
+				android:layout_gravity="center_vertical|end"
+				android:background="?android:selectableItemBackgroundBorderless"
+				android:padding="@dimen/spacing_normal"
+				android:src="@drawable/ic_save_alt"/>
+
+		<ImageButton
+				android:id="@+id/btn_delete_multi"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@null"
+				android:layout_gravity="center_vertical|end"
+				android:background="?android:selectableItemBackgroundBorderless"
+				android:padding="@dimen/spacing_normal"
+				android:src="@drawable/ic_delete"/>
+
+	</LinearLayout>
+
+	<View
+			android:id="@+id/bottomDivider"
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:elevation="@dimen/toolbar_elevation"
+			android:background="@color/md_grey_800xxx"
+			android:layout_gravity="bottom"
+			/>
+
+	<TextView
+			android:id="@+id/txtEmpty"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:layout_marginTop="24dp"
+			android:drawablePadding="@dimen/spacing_normal"
+			android:drawableTop="@drawable/ic_audiotrack_64"
+			android:textSize="@dimen/text_large"
+			android:textColor="@color/text_primary_light"
+			android:text="@string/no_records"
+			tools:text="@string/app_name"
+			android:visibility="gone"
+			tools:visibility="visible"
+			/>
+
+	<ProgressBar
+			android:id="@+id/progress"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"/>
+
+	<com.dimowner.quranicmistakeshelper.app.widget.TouchLayout
+			android:id="@+id/touch_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clipToPadding="false"
+			android:layout_gravity="bottom"
+			android:layout_marginBottom="2dp"
+			android:layout_marginStart="2dp"
+			android:layout_marginEnd="2dp"
+			android:elevation="@dimen/toolbar_elevation"
+			android:visibility="gone"
+			android:background="@drawable/panel_amber"
+			tools:visibility="visible"
+			>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+			<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+				<TextView
+						android:id="@+id/txt_progress"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:padding="@dimen/spacing_medium"
+						android:textColor="@color/text_primary_light"
+						android:textSize="@dimen/text_xlarge"
+						android:fontFamily="sans-serif-medium"
+						tools:text="00:00:00"/>
+
+				<ImageButton
+						android:id="@+id/btn_decoding"
+						android:layout_width="48dp"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical|start"
+						android:layout_marginStart="@dimen/spacing_small"
+						android:adjustViewBounds="true"
+						android:background="?android:selectableItemBackgroundBorderless"
+						android:contentDescription="@null"
+						android:scaleType="center"
+						android:visibility="gone"
+						android:src="@drawable/ic_loop" />
+
+				<ImageButton
+						android:id="@+id/btn_check_bookmark"
+						android:layout_width="48dp"
+						android:layout_height="40dp"
+						android:adjustViewBounds="true"
+						android:background="?android:selectableItemBackgroundBorderless"
+						android:contentDescription="@null"
+						android:layout_gravity="center_vertical|end"
+						android:scaleType="center"
+						android:layout_marginEnd="@dimen/spacing_small"
+						android:src="@drawable/ic_bookmark_bordered"/>
+			</FrameLayout>
+
+			<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					>
+
+				<com.dimowner.quranicmistakeshelper.app.widget.WaveformViewNew
+						android:id="@+id/record"
+						android:layout_width="wrap_content"
+						android:layout_height="60dp"
+						android:layout_gravity="center"
+						/>
+
+				<ProgressBar
+						android:id="@+id/wave_progress"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:visibility="gone"
+						android:layout_gravity="center"/>
+
+			</FrameLayout>
+
+			<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/spacing_tiny">
+
+				<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="start|bottom"
+						android:textColor="@color/text_primary_light"
+						android:layout_marginStart="@dimen/spacing_small"
+						android:textSize="@dimen/text_normal"
+						android:text="@string/zero_time"/>
+
+				<TextView
+						android:id="@+id/txt_name"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="bottom|center_horizontal"
+						android:padding="@dimen/spacing_tiny"
+						android:textColor="@color/text_primary_light"
+						android:textSize="@dimen/text_xmedium"
+						android:maxLines="2"
+						android:ellipsize="end"
+						android:layout_marginStart="@dimen/spacing_xdouble"
+						android:layout_marginEnd="@dimen/spacing_xdouble"
+						android:drawableEnd="@drawable/ic_pencil_small"
+						tools:text="Record 2321"/>
+
+				<TextView
+						android:id="@+id/txt_duration"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="end|bottom"
+						android:textColor="@color/text_primary_light"
+						android:layout_marginEnd="@dimen/spacing_small"
+						android:textSize="@dimen/text_normal"
+						tools:text="34:56"/>
+
+			</FrameLayout>
+
+			<SeekBar
+					android:id="@+id/play_progress"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:max="1000"
+					android:progress="20"
+					/>
+			<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom|center_horizontal"
+					android:layout_marginBottom="@dimen/spacing_tiny"
+					android:layout_marginTop="@dimen/spacing_tiny"
+					android:orientation="horizontal">
+
+				<ImageButton
+						android:id="@+id/btn_prev"
+						android:layout_width="@dimen/bottom_pnl_small_btn_size2"
+						android:layout_height="@dimen/bottom_pnl_small_btn_size2"
+						android:adjustViewBounds="true"
+						android:background="?android:selectableItemBackgroundBorderless"
+						android:contentDescription="@null"
+						android:layout_gravity="center"
+						android:scaleType="center"
+						android:layout_marginStart="@dimen/spacing_small"
+						android:src="@drawable/ic_skip_previous"/>
+
+				<View
+						android:layout_width="0dp"
+						android:layout_height="10dp"
+						android:layout_weight="1"
+						/>
+
+				<ImageButton
+						android:id="@+id/btn_delete"
+						android:layout_width="@dimen/bottom_pnl_small_btn_size2"
+						android:layout_height="@dimen/bottom_pnl_small_btn_size2"
+						android:adjustViewBounds="true"
+						android:background="?android:selectableItemBackgroundBorderless"
+						android:contentDescription="@null"
+						android:layout_gravity="center"
+						android:scaleType="center"
+						android:src="@drawable/ic_delete_forever_36"/>
+
+				<ImageButton
+						android:id="@+id/btn_play"
+						android:layout_width="64dp"
+						android:layout_height="50dp"
+						android:adjustViewBounds="true"
+						android:background="?android:selectableItemBackgroundBorderless"
+						android:contentDescription="@null"
+						android:layout_gravity="center"
+						android:scaleType="center"
+						android:layout_marginStart="@dimen/spacing_medium"
+						android:layout_marginEnd="@dimen/spacing_medium"
+						android:src="@drawable/ic_play_64"/>
+
+				<ImageButton
+						android:id="@+id/btn_stop"
+						android:layout_width="@dimen/bottom_pnl_small_btn_size2"
+						android:layout_height="@dimen/bottom_pnl_small_btn_size2"
+						android:adjustViewBounds="true"
+						android:background="?android:selectableItemBackgroundBorderless"
+						android:contentDescription="@null"
+						android:layout_gravity="center"
+						android:scaleType="center"
+						android:src="@drawable/ic_stop"/>
+
+				<View
+						android:layout_width="0dp"
+						android:layout_height="10dp"
+						android:layout_weight="1"
+						/>
+				<ImageButton
+						android:id="@+id/btn_next"
+						android:layout_width="@dimen/bottom_pnl_small_btn_size2"
+						android:layout_height="@dimen/bottom_pnl_small_btn_size2"
+						android:adjustViewBounds="true"
+						android:background="?android:selectableItemBackgroundBorderless"
+						android:contentDescription="@null"
+						android:layout_gravity="center"
+						android:scaleType="center"
+						android:layout_marginEnd="@dimen/spacing_small"
+						android:src="@drawable/ic_skip_next"/>
+
+			</LinearLayout>
+		</LinearLayout>
+	</com.dimowner.quranicmistakeshelper.app.widget.TouchLayout>
+
+</FrameLayout>
