@@ -1,4 +1,4 @@
-# Arabic Speech - Quran Verse Recognition Using Ensemble Voting Classifier with Mistake identification - Modelling
+# Arabic Speech - Quran Verse Recognition Using Ensemble Voting Classifier with Mistake identification - Android Application
 
 This project implements an Arabic Speech Recognition system using an ensemble voting classifier. The model is built with Python and utilizes the Librosa library for preprocessing and feature extraction. Additionally, an Android application is included that allows users to record Quranic verses, identify the words, and check the accuracy of the recitation. The APIs for this functionality are built using Flask.
 
