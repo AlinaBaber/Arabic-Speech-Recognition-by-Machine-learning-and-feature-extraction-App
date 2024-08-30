@@ -128,6 +128,11 @@ The model achieved the following results on the test dataset:
 
 These results indicate that the ensemble voting classifier is effective for recognizing Arabic speech, with a balanced performance across precision, recall, and F1-score.
 
+## Demo
+
+https://github.com/user-attachments/assets/027a6c88-a730-4d48-b27b-72f6bf593b58
+
+
 ## Future Work
 
 - **Deep Learning:** Experiment with deep learning models like CNNs or RNNs for improved accuracy.
